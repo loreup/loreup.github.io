@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap");
+
+* {
+  font-family: Manrope;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #373737;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-weight: 600;
+  transition: 0.3s ease-out;
+}
+
+button:focus {
+  outline: none;
+  opacity: 0.9;
+
+}
+
+input:focus {
+  outline-color: #6266ea;
+}
+
+button :active {
+  box-shadow: none;
+  transform: scale(1);
+}
+
+.btn-custom-primary:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease-in;
+  box-shadow: 0px 8px 24px rgba(98, 102, 234, 0.33);
+}
+
+.btn-custom-primary {
+  padding: 12px 28px;
+  background: #6266ea;
+  border-radius: 8px;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-custom-secondary {
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 1px solid #6266ea;
+  color: #6266ea;
+  border-radius: 8px;
+}
+
+.btn-custom-link {
+  background-color: transparent;
+  padding: 12px 28px;
+  color: #6266ea;
+  border: none;
+  border-radius: 8px;
+}
+
+.h1-custom {
+  font-size: 52px;
+}
+
+.h2-custom {
+  font-size: 44px;
+}
+
+.h3-custom {
+  font-size: 36px;
+}
+
+.h4-custom {
+  font-size: 24px;
+}
+
+.p-dark {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #373737;
+}
+
+.p-muted {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #808080;
+}
+
+.user-input {
+  font-size: 18px;
+  color: #373737;
+  border-radius: 8px;
+  padding: 24px 28px;
+  border: 2px solid #808080;
+  font-weight: 600;
+}

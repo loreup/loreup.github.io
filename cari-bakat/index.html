@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="../assets/css/design-system.css" />
+  <link rel="stylesheet" href="css/dist/style.css" />
+  <link rel="icon" type="image/png" href="./../assets/img/icon/logo-icon.png" />
+  <title>Brain Up | Cari Bakatmu</title>
+</head>
+
+<body>
+  <div class="bg-blue d-lg-block d-none"></div>
+  <div class="transition d-none">
+    <img src="../assets/img/icon/loading.svg" alt="" />
+    <p class="p-dark text-center mt-5"></p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-lg-flex d-none main-img">
+        <img src="../assets/img/man-wondering.png" alt="" id="cover" class="img-fluid" />
+      </div>
+
+      <div class="col-lg-6 mt-lg-5 col-12 mt-3">
+        <a href="../index.html">
+          <img src="../assets/img/icon/logo.svg" alt="" />
+        </a>
+
+        <!-- MAIN DOM -->
+        <div class="content mt-lg-5 mt-5 pt-lg-0 pt-3">
+          <div class="question">
+            <h2 class="h2-custom" id="quest">Hey, kita kenalan dulu, yuk!</h2>
+            <p class="p-muted mt-3">
+              Seperti kata pepatah, tak kenal maka tak...
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="input-user mt-lg-4 col-lg-10" id="q1">
+              <input type="text" class="user-input w-100" id="input-name" placeholder="Ketik nama kamu" />
+              <div class="if-error"></div>
+              <div class="mt-2 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="question01()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q2">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option" data-question="tki">
+                    <img src="../assets/img/icon/proccessor.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Bidang Teknologi & Informatika</h4>
+                    <p>
+                      Buat kamu yang suka belajar hal-hal yang berbau
+                      teknologi
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option" data-question="non-tki">
+                    <img src="../assets/img/icon/globe-blue.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Lebih suka bidang Non-teknologi</h4>
+                    <p>
+                      Buat kamu yang suka belajar seperti Sejarah, Bahasa dll.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="question02()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+            <!-- Kuisioner Teknologi -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q3-tki">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-mini" data-question="videografi">
+                    <img src="../assets/img/icon/video-blue.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Videografi & Edit Video</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-mini" data-question="fotografi">
+                    <img src="../assets/img/icon/aperture.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Fotografi & Edit Foto</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-option-mini mt-4" data-question="developer">
+                    <img src="../assets/img/icon/proccessor.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Membuat Program & Aplikasi</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-option-mini mt-4" data-question="gaming">
+                    <img src="../assets/img/icon/cube.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Bermain Game & Idustri Gaming</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="question03()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+            <!-- Kuisioner Non-Teknologi -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q3-non-tki">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-mini" data-question="sejarah">
+                    <img src="../assets/img/icon/globe-blue.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Sejarah Indonesia & Sosiologi</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-mini" data-question="math">
+                    <img src="../assets/img/icon/math.svg" alt="" class="img-fluid mb-2" />
+                    <h4>Matematika & Fisika</h4>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="question03()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+
+            <!-- Kuisioner Teknologi : Fotografi -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q4-fotografi">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="menggambar">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Menggambar</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="memotret">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Memotret</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="animasi">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Animasi</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="uix">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Desain Aplikasi</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="filter">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Filter Foto</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="poster">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Desain Poster</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="submitBakat()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+
+            <!-- Kuisioner Teknologi : Videografi -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q4-videografi">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="cinematic">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Cinematic</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="cgi">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>CGI</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="animasi">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Animasi</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="filmmaker">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Membuat Film</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="vlog">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Vlog</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="colorgrading">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Mengatur Warna</h4>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="submitBakat()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+
+            <!-- Kuisioner Teknologi : informatika -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q4-informatika">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="webdesign">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Desain Website</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="database">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Database</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="developer">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Aplikasi Sosial</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="appdesign">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Desain Aplikasi</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="hacking">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Meretas</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="uxengineer">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Animasi Aplikasi</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="submitBakat()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+
+
+            <!-- Kuisioner Teknologi : Gaming -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q4-gaming">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="gamer">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Bermain Game</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="esport">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Mebangun Tim</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="developergame">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Membuat Game</h4>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="submitBakat()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+
+            <!-- Kuisioner Non-Teknologi : history -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q4-history">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="sejarahid">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Sejarah</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="polhum">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Politik & Hukum</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="leader">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Memimpin Rakyat</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="bahasaId">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Bahasa Indonesia</h4>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="submitBakat()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+            <!-- Kuisioner Non-Teknologi : Matematika  -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="q4-math">
+              <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="aritmatika">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Aritmatika</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="card-option-list" data-question="geometri">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Geometri</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="ilger">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Ilmu Gerak</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <div class="card-option-list" data-question="ilmulistrik">
+                    <div class="circle">
+                      <div class="if-selected"></div>
+                    </div>
+                    <h4>Ilmu Kelistrikan</h4>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Next -->
+              <div class="mt-4 d-flex justify-content-end">
+                <button class="btn-custom-primary" onclick="submitBakat()">
+                  Lanjutkan
+                </button>
+              </div>
+            </div>
+            <!-- END SCREEN -->
+            <div class="col-lg-12 mt-lg-4 d-none" id="end-screen">
+              <div class="row">
+                <div class="col mt-4 mt-lg-0">
+                  <div class="box-bakat">
+                    <img src="../assets/img/icon/check.svg" alt="" class="img-fluid" />
+                    <h2 class="h3-custom ml-3" id="result">UI/X Designer</h2>
+                  </div>
+
+                  <div class="recommendation my-5 pt-5 d-none">
+                    <h4 class="h4-custom mb-4">Rekomendasi Kelas</h4>
+                    <div class="box-class">
+                      <img src="../assets/img/icon/book.svg" alt="" class="img-fluid" />
+                      <div class="description d-flex flex-column justify-content-center">
+                        <h2 class="h4-custom ml-3">Web Designer</h2>
+                        <p class="p-muted ml-3 mb-0">Alvin Adisatria</p>
+                      </div>
+                      <a href="../class/detail/web-design.html" class="arrow-button">
+                        <img src="../assets/img/icon/arr-right-slider.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-5 py-lg-0"></footer>
+  </div>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="../bootstrap/jquery-3.5.1.min.js"></script>
+  <script src="../bootstrap/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="app.js"></script>
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
