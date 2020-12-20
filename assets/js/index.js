@@ -53,7 +53,7 @@ function slider() {
     $("#name").html("Tamara Otsuki");
     $("#role").html("Lead Designer di Bukangapa.com");
     $("#review").html(
-      "Materinya daging semua kalian bakal nyesel kalau gak join kelas di BrainUp"
+      "Materinya daging semua kalian bakal nyesel kalau gak join kelas di Lore Up"
     );
     $(".box-img.slide-1").css(
       "background-image",
@@ -66,7 +66,7 @@ function slider() {
     $("#name").html("Sai Halim");
     $("#role").html("UI/UX Designer di Konohapedia");
     $("#review").html(
-      "Seneng banget belajar di BrainUp, dari awal gak tau bakat sampai sukses."
+      "Seneng banget belajar di Lore Up, dari awal gak tau bakat sampai sukses."
     );
     $(".box-img.slide-1").css(
       "background-image",

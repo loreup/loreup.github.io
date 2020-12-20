@@ -50,16 +50,26 @@ function slider() {
   } else if (indexImg == 1) {
     $("#name").html("Tamara Otsuki");
     $("#role").html("Lead Designer di Bukangapa.com");
-    $("#review").html("Materinya daging semua kalian bakal nyesel kalau gak join kelas di BrainUp");
-    $(".box-img.slide-1").css("background-image", "url(./assets/img/slider/img-1.png)");
+    $("#review").html(
+      "Materinya daging semua kalian bakal nyesel kalau gak join kelas di Lore Up"
+    );
+    $(".box-img.slide-1").css(
+      "background-image",
+      "url(./assets/img/slider/img-1.png)"
+    );
     $(".next").addClass("btn-slider");
     $(".prev").removeClass("btn-slider");
     $(".prev").addClass("btn-slider-muted");
   } else if (indexImg == 2) {
     $("#name").html("Sai Halim");
     $("#role").html("UI/UX Designer di Konohapedia");
-    $("#review").html("Seneng banget belajar di BrainUp, dari awal gak tau bakat sampai sukses.");
-    $(".box-img.slide-1").css("background-image", "url(./assets/img/slider/img-2.png)");
+    $("#review").html(
+      "Seneng banget belajar di Lore Up, dari awal gak tau bakat sampai sukses."
+    );
+    $(".box-img.slide-1").css(
+      "background-image",
+      "url(./assets/img/slider/img-2.png)"
+    );
     $(".next").addClass("btn-slider");
     $(".next").removeClass("btn-slider-muted");
     $(".prev").removeClass("btn-slider-muted");
@@ -67,8 +77,13 @@ function slider() {
   } else if (indexImg == 3) {
     $("#name").html("Brandon Kenz");
     $("#role").html("Lead Developer di Sandbox");
-    $("#review").html("Kalian udah lihat saya sukes, tunggu apalagi? Langsung join aja!");
-    $(".box-img.slide-1").css("background-image", "url(./assets/img/slider/img-3.png)");
+    $("#review").html(
+      "Kalian udah lihat saya sukes, tunggu apalagi? Langsung join aja!"
+    );
+    $(".box-img.slide-1").css(
+      "background-image",
+      "url(./assets/img/slider/img-3.png)"
+    );
     $(".next").removeClass("btn-slider");
     $(".next").addClass("btn-slider-muted");
     $(".prev").removeClass("btn-slider-muted");
